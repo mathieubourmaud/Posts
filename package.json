@@ -1,0 +1,32 @@
+{
+  "name": "posts",
+  "author": "Mathieu Bourmaud <mathieu.bourmaud@gmail.com>",
+  "version": "0.1.0",
+  "description": "Posts Microservice",
+  "private": false,
+  "license": "UNLICENSED",
+  "scripts": {
+    "dev": "nodemon ./bin/www | ./node_modules/.bin/pino-pretty",
+    "lint": "eslint ./bin/www ./src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mathieubourmaud/Posts.git"
+  },
+  "dependencies": {
+    "@hapi/joi": "^17.1.0",
+    "express": "^4.17.1",
+    "express-pino-logger": "^4.0.0",
+    "http-status-code": "^2.1.0",
+    "mongodb": "^3.5.3",
+    "pino": "^5.16.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2",
+    "pino-pretty": "^3.6.0",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.20.0",
+    "eslint-plugin-jest": "^22.5.0"
+  }
+}
